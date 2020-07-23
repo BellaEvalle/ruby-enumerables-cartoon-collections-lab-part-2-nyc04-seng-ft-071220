@@ -1,10 +1,7 @@
 def square_array(array)
   # Use an Enumerable to square every element in the passed in array
   # Return a new array of the results
-  new_array = []
-  index = 0 
-  array.each { |element| new_array << element * element }
-new_array
+  array.map { |elem| elem * elem }
 end
 
 def summon_captain_planet(planeteer_calls)
